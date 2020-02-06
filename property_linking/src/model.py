@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ Simple version: Keep category attributes in.
 Model should learn something like the identity
 """
 import language.nql.nql as nql
-import tensorflow as tf
-from tensorflow.keras import layers
+import tensorflow.compat.v1 as tf
+from tensorflow.compat.v1.keras import layers
 
 from property_linking.src import util
 from tensorflow.contrib import layers as contrib_layers

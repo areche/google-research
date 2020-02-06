@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ from __future__ import print_function
 from common import Actor
 from common import CriticDDPG
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from utils import soft_update
 from tensorflow.contrib import summary as contrib_summary
 from tensorflow.contrib.eager.python import tfe as contrib_eager_python_tfe

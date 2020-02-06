@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 import numpy as np
 import os
 import random
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
-from tensorflow.python.platform import flags
+from tensorflow.compat.v1.python.platform import flags
 from utils import get_images
 
 FLAGS = flags.FLAGS

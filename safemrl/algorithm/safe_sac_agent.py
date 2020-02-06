@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ from . import agents
 from absl import logging  # pylint: disable=unused-import
 import gin
 import numpy as np  # pylint: disable=unused-import
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import tensorflow_probability as tfp
 from tf_agents.agents import tf_agent
 from tf_agents.agents.sac import sac_agent

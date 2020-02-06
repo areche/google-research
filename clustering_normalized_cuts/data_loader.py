@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,10 +22,10 @@ import tempfile
 import time
 
 import numpy as np
-from tensorflow import gfile
-from tensorflow.keras import backend as K
-from tensorflow.keras.datasets import mnist
-from tensorflow.keras.models import model_from_json
+from tensorflow.compat.v1 import gfile
+from tensorflow.compat.v1.keras import backend as K
+from tensorflow.compat.v1.keras.datasets import mnist
+from tensorflow.compat.v1.keras.models import model_from_json
 
 from clustering_normalized_cuts import pairs
 

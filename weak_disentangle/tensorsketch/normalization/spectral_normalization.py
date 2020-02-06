@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 """Spectral normalization utilities."""
 
 # pylint: disable=g-importing-member, g-bad-import-order
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from weak_disentangle.tensorsketch.modules.base import build_with_name_scope
 from weak_disentangle.tensorsketch.normalization.base import KernelNorm

@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -702,7 +702,7 @@ class TfCnnBenchmarksTest(tf.test.TestCase):
     params = params._replace(train_dir=new_train_dir, eval=True)
     self._run_benchmark_cnn_with_black_and_white_images(params)
 
-  @mock.patch('tensorflow.train.Saver')
+  @mock.patch.object(tf.train, 'Saver')
   @mock.patch('benchmark_cnn._get_checkpoint_to_load')  # pylint: disable=line-too-long
   def testLoadCheckpoint(self, mock_checkpoint_to_load, mock_saver):
     """Tests load checkpoint with full path to checkpoint."""
@@ -726,7 +726,7 @@ class TfCnnBenchmarksTest(tf.test.TestCase):
     self.assertRaises(benchmark_cnn.CheckpointNotFoundException,
                       benchmark_cnn._get_checkpoint_to_load, ckpt_path)
 
-  @mock.patch('tensorflow.train.get_checkpoint_state')
+  @mock.patch.object(tf.train, 'get_checkpoint_state')
   def testGetCheckpointToLoad(self, mock_checkpoint_state):
     """Tests passing path to checkpoint folder."""
     expected_checkpoint = '/path/to/checkpoints/model.ckpt-1243'

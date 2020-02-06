@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 # Gumbel-softmax code mostly copied from
 # https://github.com/ericjang/gumbel-softmax/blob/3c8584924603869e90ca74ac20a6a03d99a91ef9/Categorical%20VAE.ipynb
 # See this paper for details on the method: https://arxiv.org/abs/1611.01144
-import tensorflow as tf  # tf
+import tensorflow.compat.v1 as tf  # tf
 
 # pylint: disable=invalid-name
 

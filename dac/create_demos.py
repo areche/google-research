@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ from common import Actor
 import gym
 import numpy as np
 from replay_buffer import ReplayBuffer
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from utils import do_rollout
 from tensorflow.contrib.eager.python import tfe as contrib_eager_python_tfe
 # pylint: enable=g-import-not-at-top,g-bad-import-order

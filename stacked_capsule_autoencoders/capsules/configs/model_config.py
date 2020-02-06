@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 from absl import flags
 from monty.collections import AttrDict
 import sonnet as snt
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from stacked_capsule_autoencoders.capsules import primary
 from stacked_capsule_autoencoders.capsules.attention import SetTransformer
 from stacked_capsule_autoencoders.capsules.models.constellation import ConstellationAutoencoder

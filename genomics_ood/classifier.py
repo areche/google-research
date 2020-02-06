@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import random
 from absl import flags
 import numpy as np
 from sklearn.metrics import roc_auc_score
-import tensorflow as tf  # tf
+import tensorflow.compat.v1 as tf  # tf
 import yaml
 from genomics_ood import utils
 from tensorflow.contrib import layers as contrib_layers

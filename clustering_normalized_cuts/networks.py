@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,12 +23,12 @@ import tempfile
 import time
 
 import numpy as np
-import tensorflow as tf
-from tensorflow import gfile
-from tensorflow.keras import backend as K
-from tensorflow.keras.layers import Input
-from tensorflow.keras.layers import Lambda
-from tensorflow.keras.models import Model
+import tensorflow.compat.v1 as tf
+from tensorflow.compat.v1 import gfile
+from tensorflow.compat.v1.keras import backend as K
+from tensorflow.compat.v1.keras.layers import Input
+from tensorflow.compat.v1.keras.layers import Lambda
+from tensorflow.compat.v1.keras.models import Model
 
 from clustering_normalized_cuts import affinities
 from clustering_normalized_cuts import train

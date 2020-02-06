@@ -8,8 +8,11 @@ python:
   - "3.6"
 env:
   matrix:
+    - PROJECT="abps"
     - PROJECT="albert"
+    - PROJECT="algae_dice"
     - PROJECT="attribution"
+    - PROJECT="axial"
     - PROJECT="bam"
     - PROJECT="bisimulation_aaai2020"
     - PROJECT="bitempered_loss"
@@ -44,6 +47,7 @@ env:
     - PROJECT="property_linking"
     - PROJECT="protoattend"
     - PROJECT="psycholab"
+    - PROJECT="rl4circopt"
     - PROJECT="rllim"
     - PROJECT="robust_loss"
     - PROJECT="sm3"

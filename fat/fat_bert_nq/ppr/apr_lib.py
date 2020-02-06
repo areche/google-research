@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2019 The Google Research Authors.
+# Copyright 2020 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from fat.fat_bert_nq.ppr.apr_algo import csr_personalized_pagerank
 from fat.fat_bert_nq.ppr.apr_algo import csr_topk_fact_extractor
 from fat.fat_bert_nq.ppr.kb_csr_io import CsrData
